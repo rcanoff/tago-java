@@ -25,6 +25,7 @@ public class Device {
     RestTemplate restTemplate;
 
     public Device(String token) {
+        
         headers = new HttpHeaders();
         headers.setContentType(MediaType.APPLICATION_JSON);
         headers.add("Device-Token", token);
